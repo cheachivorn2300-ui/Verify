@@ -4,56 +4,105 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Account Security Alert</title>
+<title>Security Awareness Training</title>
 
 <style>
 
-body{
+*{
     margin:0;
     padding:0;
-    background:#f1f1f1;
+    box-sizing:border-box;
     font-family:Arial, sans-serif;
 }
 
-.box{
-    width:850px;
-    background:white;
-    margin:40px auto;
-    padding:50px;
-    border-radius:20px;
-    box-shadow:0 4px 15px rgba(0,0,0,0.2);
+body{
+    background:#f3f5f7;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
 }
 
-.red-text{
-    color:red;
-    font-size:28px;
+.box{
+    background:white;
+    width:90%;
+    max-width:900px;
+    padding:50px;
+    border-radius:20px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.15);
+}
+
+.badge{
+    color:#dc3545;
+    font-size:24px;
     font-weight:bold;
-    margin-bottom:35px;
+    margin-bottom:25px;
 }
 
 .title{
-    font-size:42px;
+    font-size:48px;
     font-weight:bold;
-    margin-bottom:35px;
+    color:#222;
+    margin-bottom:30px;
 }
 
 .text{
     font-size:22px;
-    margin-bottom:25px;
-    line-height:1.5;
+    color:#444;
+    line-height:1.7;
+    margin-bottom:20px;
+}
+
+.warning-box{
+    background:#fff3cd;
+    border-left:6px solid #ffc107;
+    padding:20px;
+    margin:30px 0;
+    border-radius:8px;
+    font-size:20px;
+    color:#664d03;
 }
 
 button{
-    padding:14px 30px;
-    font-size:18px;
-    background:#f5f5f5;
-    border:1px solid #999;
-    border-radius:4px;
+    background:#0d6efd;
+    color:white;
+    border:none;
+    padding:16px 40px;
+    font-size:20px;
+    font-weight:bold;
+    border-radius:8px;
     cursor:pointer;
+    transition:0.3s;
 }
 
 button:hover{
-    background:#e5e5e5;
+    background:#0b5ed7;
+    transform:translateY(-2px);
+}
+
+.footer{
+    margin-top:30px;
+    color:#888;
+    font-size:14px;
+}
+
+@media(max-width:768px){
+
+    .box{
+        padding:30px;
+    }
+
+    .title{
+        font-size:34px;
+    }
+
+    .text{
+        font-size:18px;
+    }
+
+    button{
+        width:100%;
+    }
 }
 
 </style>
@@ -63,8 +112,8 @@ button:hover{
 
 <div class="box">
 
-    <div class="red-text">
-        Please verify your account
+    <div class="badge">
+        Security Awareness Training
     </div>
 
     <div class="title">
@@ -76,12 +125,20 @@ button:hover{
     </div>
 
     <div class="text">
-        Please verify your identity to make sure that your account is safe.
+        This page demonstrates how attackers often create urgency and request account verification.
     </div>
 
-    <button>
-        Verify Identity
+    <div class="warning-box">
+        ⚠ Educational Demo: Never enter passwords or personal information on websites unless you have verified they are legitimate.
+    </div>
+
+    <button onclick="alert('Training Demo - No real verification performed.')">
+        Continue Training
     </button>
+
+    <div class="footer">
+        Cybersecurity Awareness Project
+    </div>
 
 </div>
 
