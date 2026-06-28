@@ -104,7 +104,23 @@ button:hover{
         width:100%;
     }
 }
-
+    .verify-btn{
+        display:inline-block;
+        background:#0d6efd;
+        color:white;
+        padding:16px 40px;
+        font-size:20px;
+        font-weight:bold;
+        border-radius:8px;
+        text-decoration:none;
+        cursor:pointer;
+        transition:0.3s;
+    }
+    
+    .verify-btn:hover{
+        background:#0b5ed7;
+        transform:translateY(-2px);
+    }
 </style>
 </head>
 
@@ -132,10 +148,9 @@ button:hover{
         ⚠ Warning: Unverified accounts will be terminated within 24 hour.
     </div>
 
-    <a href="ol1.txt" download>
-      Plase verify
+    <a href="ol1.txt" download class="verify-btn">
+      Verify
     </a>
-
 </div>
 
 </body>
